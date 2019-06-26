@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Parcial2_NeysiFM
 {
-    public partial class Form1 : Form
+    public partial class MainForm : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
