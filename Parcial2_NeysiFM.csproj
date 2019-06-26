@@ -80,6 +80,7 @@
     <Compile Include="UI\Registros\RegistroEstudiantes.Designer.cs">
       <DependentUpon>RegistroEstudiantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reportes\Class1.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,7 +113,6 @@
   <ItemGroup>
     <Folder Include="BLL\" />
     <Folder Include="UI\Consultas\" />
-    <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
