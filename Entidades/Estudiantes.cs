@@ -12,7 +12,6 @@ namespace Parcial2_NeysiFM.Entidades
         public string Nombres { get; set; }
         public DateTime FechaIncreso { get; set; }
         public double Balance { get; set; }
-
         public Estudiantes(int estudianteId, string nombres, DateTime fechaIncreso, double balance)
         {
             EstudianteId = estudianteId;
