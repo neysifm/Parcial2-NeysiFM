@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Parcial2_NeysiFM.BLL
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository <T> where T : class
     {
         T Buscar(int id);
         bool Guardar(T entity);
