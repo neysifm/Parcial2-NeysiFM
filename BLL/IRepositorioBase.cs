@@ -12,10 +12,14 @@ namespace Parcial2_NeysiFM.BLL
     public class RepositorioBase <T> : IDisposable, IRepository <T> where T : class
     {
         internal Contexto contexto;
+
+        // CONSTRUCTOR
         public RepositorioBase()
         {
             contexto = new Contexto();
         }
+
+        // METODO GUARDAR
         public virtual bool Guardar(T entity)
         {
             bool Paso = false;
@@ -30,6 +34,8 @@ namespace Parcial2_NeysiFM.BLL
             }
             return Paso;
         }
+
+        // METODO MODIFICAR
         public virtual bool Modificar(T entity)
         {
             bool Paso = false;
@@ -44,6 +50,8 @@ namespace Parcial2_NeysiFM.BLL
             }
             return Paso;
         }
+
+        // METODO BUSCAR
         public T Buscar(int id)
         {
             T entity;
@@ -57,6 +65,8 @@ namespace Parcial2_NeysiFM.BLL
             }
             return entity;
         }
+
+        // LISTAR
         public List<T> GetList(Expression<Func<T, bool>> expression)
         {
             List<T> lista;
@@ -70,6 +80,8 @@ namespace Parcial2_NeysiFM.BLL
             }
             return lista;
         }
+
+        // METODO ELIMINAR
         public bool Eliminar(int id)
         {
             bool Paso = false;
