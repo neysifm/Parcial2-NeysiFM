@@ -15,5 +15,4 @@ namespace Parcial2_NeysiFM.BLL
         bool Eliminar(int id);
         List<T> GetList(Expression<Func<T, bool>> expression);
     }
-    
 }
