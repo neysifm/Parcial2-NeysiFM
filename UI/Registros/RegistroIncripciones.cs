@@ -184,8 +184,6 @@ namespace Parcial2_NeysiFM.UI.Registros
                 LlenaCampos(inscripciones, estudiante, null);
                 LlenarDataGrid(inscripciones.InscripcionDetalle);
             }
-            
-
         }
 
         private void BuscarAsignaturametroButton_Click(object sender, EventArgs e)
@@ -226,7 +224,17 @@ namespace Parcial2_NeysiFM.UI.Registros
 
         private void EliminarFilametroButton_Click(object sender, EventArgs e)
         {
-            this.AsignaturasdataGridView.Rows.RemoveAt(this.AsignaturasdataGridView.CurrentCellAddress.Y);
+            if(AsignaturasdataGridView.Rows.Count > 0 && AsignaturasdataGridView != null)
+            {
+                listaDetalle.RemoveAt(AsignaturasdataGridView.CurrentRow.Index);
+                CargarGrid();
+            }
+        }
+
+        private void CargarGrid()
+        {
+            AsignaturasdataGridView.DataSource = null;
+            AsignaturasdataGridView.DataSource = listaDetalle;
         }
 
         private double Total()
