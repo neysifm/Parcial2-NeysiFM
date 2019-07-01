@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -44,6 +45,9 @@
             this.GuardarmetroButton = new MetroFramework.Controls.MetroButton();
             this.EliminarmetroButton = new MetroFramework.Controls.MetroButton();
             this.AsignaturasgroupBox = new System.Windows.Forms.GroupBox();
+            this.EliminarFilametroButton = new MetroFramework.Controls.MetroButton();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.TotalmetroTextBox = new MetroFramework.Controls.MetroTextBox();
             this.AgregarmetroButton = new MetroFramework.Controls.MetroButton();
             this.DescripcionmetroTextBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
@@ -51,15 +55,14 @@
             this.AsignaturaIDnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.AsignaturasdataGridView = new System.Windows.Forms.DataGridView();
-            this.EliminarFilametroButton = new MetroFramework.Controls.MetroButton();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.TotalmetroTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.EstudianteIDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InscripcionIDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
             this.AsignaturasgroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturaIDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturasdataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -83,7 +86,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(59, 181);
+            this.metroLabel3.Location = new System.Drawing.Point(59, 158);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(125, 19);
             this.metroLabel3.TabIndex = 2;
@@ -92,7 +95,7 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(432, 181);
+            this.metroLabel4.Location = new System.Drawing.Point(411, 154);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(46, 19);
             this.metroLabel4.TabIndex = 3;
@@ -101,7 +104,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(57, 232);
+            this.metroLabel5.Location = new System.Drawing.Point(57, 198);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(102, 19);
             this.metroLabel5.TabIndex = 4;
@@ -116,14 +119,14 @@
             // 
             // InscripcionIDnumericUpDown
             // 
-            this.InscripcionIDnumericUpDown.Location = new System.Drawing.Point(146, 108);
+            this.InscripcionIDnumericUpDown.Location = new System.Drawing.Point(165, 108);
             this.InscripcionIDnumericUpDown.Name = "InscripcionIDnumericUpDown";
             this.InscripcionIDnumericUpDown.Size = new System.Drawing.Size(82, 20);
             this.InscripcionIDnumericUpDown.TabIndex = 6;
             // 
             // PrecionumericUpDown
             // 
-            this.PrecionumericUpDown.Location = new System.Drawing.Point(165, 232);
+            this.PrecionumericUpDown.Location = new System.Drawing.Point(165, 195);
             this.PrecionumericUpDown.Name = "PrecionumericUpDown";
             this.PrecionumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.PrecionumericUpDown.TabIndex = 7;
@@ -134,7 +137,7 @@
             // 
             // 
             this.NombremetroTextBox.CustomButton.Image = null;
-            this.NombremetroTextBox.CustomButton.Location = new System.Drawing.Point(191, 1);
+            this.NombremetroTextBox.CustomButton.Location = new System.Drawing.Point(183, 1);
             this.NombremetroTextBox.CustomButton.Name = "";
             this.NombremetroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.NombremetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -143,7 +146,7 @@
             this.NombremetroTextBox.CustomButton.UseSelectable = true;
             this.NombremetroTextBox.CustomButton.Visible = false;
             this.NombremetroTextBox.Lines = new string[0];
-            this.NombremetroTextBox.Location = new System.Drawing.Point(183, 177);
+            this.NombremetroTextBox.Location = new System.Drawing.Point(183, 153);
             this.NombremetroTextBox.MaxLength = 32767;
             this.NombremetroTextBox.Name = "NombremetroTextBox";
             this.NombremetroTextBox.PasswordChar = '\0';
@@ -152,7 +155,7 @@
             this.NombremetroTextBox.SelectionLength = 0;
             this.NombremetroTextBox.SelectionStart = 0;
             this.NombremetroTextBox.ShortcutsEnabled = true;
-            this.NombremetroTextBox.Size = new System.Drawing.Size(213, 23);
+            this.NombremetroTextBox.Size = new System.Drawing.Size(205, 23);
             this.NombremetroTextBox.TabIndex = 8;
             this.NombremetroTextBox.UseSelectable = true;
             this.NombremetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -160,29 +163,31 @@
             // 
             // FechametroDateTime
             // 
-            this.FechametroDateTime.Location = new System.Drawing.Point(484, 171);
+            this.FechametroDateTime.Location = new System.Drawing.Point(458, 147);
             this.FechametroDateTime.MinimumSize = new System.Drawing.Size(0, 29);
             this.FechametroDateTime.Name = "FechametroDateTime";
-            this.FechametroDateTime.Size = new System.Drawing.Size(213, 29);
+            this.FechametroDateTime.Size = new System.Drawing.Size(239, 29);
             this.FechametroDateTime.TabIndex = 9;
             // 
             // BuscarInscripcionmetroButton
             // 
-            this.BuscarInscripcionmetroButton.Location = new System.Drawing.Point(272, 108);
+            this.BuscarInscripcionmetroButton.Location = new System.Drawing.Point(258, 107);
             this.BuscarInscripcionmetroButton.Name = "BuscarInscripcionmetroButton";
             this.BuscarInscripcionmetroButton.Size = new System.Drawing.Size(75, 23);
             this.BuscarInscripcionmetroButton.TabIndex = 10;
             this.BuscarInscripcionmetroButton.Text = "Buscar";
             this.BuscarInscripcionmetroButton.UseSelectable = true;
+            this.BuscarInscripcionmetroButton.Click += new System.EventHandler(this.BuscarInscripcionmetroButton_Click);
             // 
             // BuscarEstudiantemetroButton
             // 
-            this.BuscarEstudiantemetroButton.Location = new System.Drawing.Point(595, 107);
+            this.BuscarEstudiantemetroButton.Location = new System.Drawing.Point(580, 106);
             this.BuscarEstudiantemetroButton.Name = "BuscarEstudiantemetroButton";
             this.BuscarEstudiantemetroButton.Size = new System.Drawing.Size(75, 23);
             this.BuscarEstudiantemetroButton.TabIndex = 11;
             this.BuscarEstudiantemetroButton.Text = "Buscar";
             this.BuscarEstudiantemetroButton.UseSelectable = true;
+            this.BuscarEstudiantemetroButton.Click += new System.EventHandler(this.BuscarEstudiantemetroButton_Click);
             // 
             // NuevometroButton
             // 
@@ -213,6 +218,9 @@
             // 
             // AsignaturasgroupBox
             // 
+            this.AsignaturasgroupBox.Controls.Add(this.EliminarFilametroButton);
+            this.AsignaturasgroupBox.Controls.Add(this.metroLabel6);
+            this.AsignaturasgroupBox.Controls.Add(this.TotalmetroTextBox);
             this.AsignaturasgroupBox.Controls.Add(this.AgregarmetroButton);
             this.AsignaturasgroupBox.Controls.Add(this.DescripcionmetroTextBox);
             this.AsignaturasgroupBox.Controls.Add(this.metroLabel8);
@@ -220,12 +228,60 @@
             this.AsignaturasgroupBox.Controls.Add(this.AsignaturaIDnumericUpDown);
             this.AsignaturasgroupBox.Controls.Add(this.metroLabel7);
             this.AsignaturasgroupBox.Controls.Add(this.AsignaturasdataGridView);
-            this.AsignaturasgroupBox.Location = new System.Drawing.Point(59, 269);
+            this.AsignaturasgroupBox.Location = new System.Drawing.Point(59, 222);
             this.AsignaturasgroupBox.Name = "AsignaturasgroupBox";
-            this.AsignaturasgroupBox.Size = new System.Drawing.Size(638, 214);
+            this.AsignaturasgroupBox.Size = new System.Drawing.Size(638, 255);
             this.AsignaturasgroupBox.TabIndex = 15;
             this.AsignaturasgroupBox.TabStop = false;
             this.AsignaturasgroupBox.Text = "Asignaturas";
+            // 
+            // EliminarFilametroButton
+            // 
+            this.EliminarFilametroButton.Location = new System.Drawing.Point(6, 226);
+            this.EliminarFilametroButton.Name = "EliminarFilametroButton";
+            this.EliminarFilametroButton.Size = new System.Drawing.Size(109, 23);
+            this.EliminarFilametroButton.TabIndex = 16;
+            this.EliminarFilametroButton.Text = "Eliminar Fila";
+            this.EliminarFilametroButton.UseSelectable = true;
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(481, 229);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(39, 19);
+            this.metroLabel6.TabIndex = 17;
+            this.metroLabel6.Text = "Total:";
+            // 
+            // TotalmetroTextBox
+            // 
+            // 
+            // 
+            // 
+            this.TotalmetroTextBox.CustomButton.Image = null;
+            this.TotalmetroTextBox.CustomButton.Location = new System.Drawing.Point(89, 1);
+            this.TotalmetroTextBox.CustomButton.Name = "";
+            this.TotalmetroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.TotalmetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TotalmetroTextBox.CustomButton.TabIndex = 1;
+            this.TotalmetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TotalmetroTextBox.CustomButton.UseSelectable = true;
+            this.TotalmetroTextBox.CustomButton.Visible = false;
+            this.TotalmetroTextBox.Lines = new string[0];
+            this.TotalmetroTextBox.Location = new System.Drawing.Point(521, 226);
+            this.TotalmetroTextBox.MaxLength = 32767;
+            this.TotalmetroTextBox.Name = "TotalmetroTextBox";
+            this.TotalmetroTextBox.PasswordChar = '\0';
+            this.TotalmetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TotalmetroTextBox.SelectedText = "";
+            this.TotalmetroTextBox.SelectionLength = 0;
+            this.TotalmetroTextBox.SelectionStart = 0;
+            this.TotalmetroTextBox.ShortcutsEnabled = true;
+            this.TotalmetroTextBox.Size = new System.Drawing.Size(111, 23);
+            this.TotalmetroTextBox.TabIndex = 18;
+            this.TotalmetroTextBox.UseSelectable = true;
+            this.TotalmetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TotalmetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // AgregarmetroButton
             // 
@@ -235,6 +291,7 @@
             this.AgregarmetroButton.TabIndex = 23;
             this.AgregarmetroButton.Text = "Agregar";
             this.AgregarmetroButton.UseSelectable = true;
+            this.AgregarmetroButton.Click += new System.EventHandler(this.AgregarmetroButton_Click);
             // 
             // DescripcionmetroTextBox
             // 
@@ -283,6 +340,7 @@
             this.BuscarAsignaturametroButton.TabIndex = 19;
             this.BuscarAsignaturametroButton.Text = "Buscar";
             this.BuscarAsignaturametroButton.UseSelectable = true;
+            this.BuscarAsignaturametroButton.Click += new System.EventHandler(this.BuscarAsignaturametroButton_Click);
             // 
             // AsignaturaIDnumericUpDown
             // 
@@ -294,7 +352,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(6, 27);
+            this.metroLabel7.Location = new System.Drawing.Point(3, 27);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(24, 19);
             this.metroLabel7.TabIndex = 19;
@@ -305,65 +363,18 @@
             this.AsignaturasdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AsignaturasdataGridView.Location = new System.Drawing.Point(6, 49);
             this.AsignaturasdataGridView.Name = "AsignaturasdataGridView";
-            this.AsignaturasdataGridView.Size = new System.Drawing.Size(626, 159);
+            this.AsignaturasdataGridView.Size = new System.Drawing.Size(626, 171);
             this.AsignaturasdataGridView.TabIndex = 0;
             // 
-            // EliminarFilametroButton
+            // errorProvider
             // 
-            this.EliminarFilametroButton.Location = new System.Drawing.Point(59, 483);
-            this.EliminarFilametroButton.Name = "EliminarFilametroButton";
-            this.EliminarFilametroButton.Size = new System.Drawing.Size(109, 23);
-            this.EliminarFilametroButton.TabIndex = 16;
-            this.EliminarFilametroButton.Text = "Eliminar Fila";
-            this.EliminarFilametroButton.UseSelectable = true;
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(551, 483);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(39, 19);
-            this.metroLabel6.TabIndex = 17;
-            this.metroLabel6.Text = "Total:";
-            // 
-            // TotalmetroTextBox
-            // 
-            // 
-            // 
-            // 
-            this.TotalmetroTextBox.CustomButton.Image = null;
-            this.TotalmetroTextBox.CustomButton.Location = new System.Drawing.Point(89, 1);
-            this.TotalmetroTextBox.CustomButton.Name = "";
-            this.TotalmetroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.TotalmetroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TotalmetroTextBox.CustomButton.TabIndex = 1;
-            this.TotalmetroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TotalmetroTextBox.CustomButton.UseSelectable = true;
-            this.TotalmetroTextBox.CustomButton.Visible = false;
-            this.TotalmetroTextBox.Lines = new string[0];
-            this.TotalmetroTextBox.Location = new System.Drawing.Point(586, 483);
-            this.TotalmetroTextBox.MaxLength = 32767;
-            this.TotalmetroTextBox.Name = "TotalmetroTextBox";
-            this.TotalmetroTextBox.PasswordChar = '\0';
-            this.TotalmetroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TotalmetroTextBox.SelectedText = "";
-            this.TotalmetroTextBox.SelectionLength = 0;
-            this.TotalmetroTextBox.SelectionStart = 0;
-            this.TotalmetroTextBox.ShortcutsEnabled = true;
-            this.TotalmetroTextBox.Size = new System.Drawing.Size(111, 23);
-            this.TotalmetroTextBox.TabIndex = 18;
-            this.TotalmetroTextBox.UseSelectable = true;
-            this.TotalmetroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TotalmetroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.errorProvider.ContainerControl = this;
             // 
             // RegistroIncripciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 557);
-            this.Controls.Add(this.TotalmetroTextBox);
-            this.Controls.Add(this.metroLabel6);
-            this.Controls.Add(this.EliminarFilametroButton);
             this.Controls.Add(this.AsignaturasgroupBox);
             this.Controls.Add(this.EliminarmetroButton);
             this.Controls.Add(this.GuardarmetroButton);
@@ -390,6 +401,7 @@
             this.AsignaturasgroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturaIDnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturasdataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,5 +435,6 @@
         private MetroFramework.Controls.MetroButton EliminarFilametroButton;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroTextBox TotalmetroTextBox;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

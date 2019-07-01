@@ -28,5 +28,17 @@ namespace Parcial2_NeysiFM
             RegistroEstudiantes Rest = new RegistroEstudiantes();
             Rest.ShowDialog();
         }
+
+        private void MetroTile2_Click(object sender, EventArgs e)
+        {
+            RegistroAsignatura Rasg = new RegistroAsignatura();
+            Rasg.ShowDialog();
+        }
+
+        private void MetroTile3_Click(object sender, EventArgs e)
+        {
+            RegistroIncripciones Rins = new RegistroIncripciones();
+            Rins.ShowDialog();
+        }
     }
 }

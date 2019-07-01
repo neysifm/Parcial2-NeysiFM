@@ -22,6 +22,7 @@ namespace Parcial2_NeysiFM.UI.Registros
         public void LimpiarCampos()
         {
             IDnumericUpDown.Value = 0;
+            IDnumericUpDown.Enabled = true;
             DescripcionmetroTextBox.Clear();
             CreditosnumericUpDown.Value = 0;
         }
@@ -103,6 +104,7 @@ namespace Parcial2_NeysiFM.UI.Registros
             {
                 Asignaturas asignaturas = new RepositorioBase<Asignaturas>().Buscar(Convert.ToInt32(IDnumericUpDown.Value));
                 LlenaCampos(asignaturas);
+                IDnumericUpDown.Enabled = false;
             }
             else
             {
@@ -119,14 +121,24 @@ namespace Parcial2_NeysiFM.UI.Registros
         {
             if (ValidarModificar())
             {
-                new RepositorioBase<Asignaturas>().Guardar(LlenaClase());
+                new RepositorioBase<Asignaturas>().Modificar(LlenaClase());
                 LimpiarCampos();
-                MessageBox.Show("El Registro se Guardo Correctamente!");
+                MessageBox.Show("El Registro se Actualizo Correctamente!");
             }
             else
             {
-                MessageBox.Show("Debe Llenar todos los campos Correctamente!");
+                 if(ValidarGuardar())
+                {
+                    new RepositorioBase<Asignaturas>().Guardar(LlenaClase());
+                    LimpiarCampos();
+                    MessageBox.Show("El Registro se Guardo Correctamente!");
+                } else
+                {
+                    MessageBox.Show("Debe Llenar todos los campos Correctamente!");
+                }
+                
             }
+            
         }
 
         private void EliminarmetroButton_Click(object sender, EventArgs e)

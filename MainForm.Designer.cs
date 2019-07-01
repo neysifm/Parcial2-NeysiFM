@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
@@ -36,7 +37,6 @@
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.label1 = new System.Windows.Forms.Label();
             this.metroPanel3.SuspendLayout();
             this.metroPanel4.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,16 @@
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(136, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(463, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Sistema Registro de Estudiantes";
             // 
             // metroPanel4
             // 
@@ -120,6 +130,7 @@
             this.metroTile3.TabIndex = 4;
             this.metroTile3.Text = "Incripciones";
             this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.MetroTile3_Click);
             // 
             // metroTile2
             // 
@@ -130,6 +141,7 @@
             this.metroTile2.TabIndex = 3;
             this.metroTile2.Text = "Registrar Asignatura";
             this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.MetroTile2_Click);
             // 
             // metroTile1
             // 
@@ -141,16 +153,6 @@
             this.metroTile1.Text = "Registrar Estudiante";
             this.metroTile1.UseSelectable = true;
             this.metroTile1.Click += new System.EventHandler(this.MetroTile1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(463, 31);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sistema Registro de Estudiantes";
             // 
             // MainForm
             // 
