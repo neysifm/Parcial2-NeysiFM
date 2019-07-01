@@ -71,6 +71,10 @@
             // 
             this.FiltrometroComboBox.FormattingEnabled = true;
             this.FiltrometroComboBox.ItemHeight = 23;
+            this.FiltrometroComboBox.Items.AddRange(new object[] {
+            "Todos Los Registros",
+            "Por ID",
+            "Por Descripcion"});
             this.FiltrometroComboBox.Location = new System.Drawing.Point(115, 67);
             this.FiltrometroComboBox.Name = "FiltrometroComboBox";
             this.FiltrometroComboBox.Size = new System.Drawing.Size(215, 29);

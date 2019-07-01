@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parcial2_NeysiFM.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,56 @@ namespace Parcial2_NeysiFM.UI.Consultas
 {
     public partial class ConsultaIncripcion : MetroFramework.Forms.MetroForm
     {
-        public ConsultaIncripcion()
+     /*   public ConsultaIncripcion()
         {
             InitializeComponent();
         }
+
+        private void Buscar()
+        {
+            var Lista = new List<Inscripciones>(); 
+            RepositorioInscripciones contexto = new RepositorioInscripciones();
+
+            if (CriteriometroTextBox.Text.Trim().Length > 0)
+            {
+
+                try
+                {
+
+                    switch (FiltrometroComboBox.SelectedIndex)
+                    {
+                        // Filtrar Todo
+                        case 0:
+                            Lista = contexto.GetList(I => true);
+                            break;
+                        // Filtrar Por IncripcionID
+                        case 1:
+                            int id = Convert.ToInt32(CriteriometroTextBox.Text);
+                            Lista = contexto.GetList(I => I.InscripcionId == id);
+                            break;
+                        // Filtrar Por EstudianteID
+                        case 2:
+                            int id2 = Convert.ToInt32(CriteriometroTextBox.Text);
+                            Lista = contexto.GetList(I => I.EstudianteId == id2);
+                            break;
+
+                    }
+                    Lista = Lista.Where(E => E.Fecha >= DesdemetroDateTime.Value.Date && E.Fecha <= HastametroDateTime.Value.Date).ToList();
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+            else
+            {
+                Lista = contexto.GetList(p => true);
+            }
+
+            Lista = Lista.Where(E => E.Fecha >= DesdemetroDateTime.Value.Date  && E.Fecha <= HastametroDateTime.Value.Date ).ToList();
+
+            ConsultadataGridView.DataSource = null;
+            ConsultadataGridView.DataSource = Lista;
+        }*/
     }
 }

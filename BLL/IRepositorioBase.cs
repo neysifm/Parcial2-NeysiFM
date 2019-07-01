@@ -82,7 +82,7 @@ namespace Parcial2_NeysiFM.BLL
         }
 
         // METODO ELIMINAR
-        public bool Eliminar(int id)
+        public virtual bool Eliminar(int id)
         {
             bool Paso = false;
             T entity;
