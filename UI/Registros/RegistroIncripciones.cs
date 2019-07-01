@@ -203,10 +203,17 @@ namespace Parcial2_NeysiFM.UI.Registros
         private void AgregarmetroButton_Click(object sender, EventArgs e)
         {
             Asignaturas asignatura = new RepositorioBase<Asignaturas>().Buscar(Convert.ToInt32(AsignaturaIDnumericUpDown.Value));
-            if(asignatura != null)
+            Estudiantes estudiante = new RepositorioBase<Estudiantes>().Buscar(Convert.ToInt32(EstudianteIDnumericUpDown.Value));
+            if(asignatura != null && estudiante != null)
             {
-                this.listaDetalle.Add(new InscripcionAsignaturaDetalle());
+                this.listaDetalle.Add(new InscripcionAsignaturaDetalle(Convert.ToInt32(this.InscripcionIDnumericUpDown.Value), asignatura, estudiante, CalcularMonto()));
             }
+        }
+
+        private double CalcularMonto()
+        {
+            double monto = 0;
+            foreach()
         }
     }
 }
