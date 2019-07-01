@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parcial2_NeysiFM.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,9 +23,10 @@ namespace Parcial2_NeysiFM
 
         }
 
-        private void MetroPanel4_Paint(object sender, PaintEventArgs e)
+        private void MetroTile1_Click(object sender, EventArgs e)
         {
-
+            RegistroEstudiantes Rest = new RegistroEstudiantes();
+            Rest.ShowDialog();
         }
     }
 }

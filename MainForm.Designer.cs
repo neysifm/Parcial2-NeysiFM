@@ -30,12 +30,12 @@
         {
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,37 +76,6 @@
             this.metroPanel4.VerticalScrollbarBarColor = true;
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel4.VerticalScrollbarSize = 10;
-            this.metroPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.MetroPanel4_Paint);
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(82, 107);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(164, 108);
-            this.metroTile1.TabIndex = 2;
-            this.metroTile1.Text = "Registrar Estudiante";
-            this.metroTile1.UseSelectable = true;
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(289, 107);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(164, 108);
-            this.metroTile2.TabIndex = 3;
-            this.metroTile2.Text = "Registrar Asignatura";
-            this.metroTile2.UseSelectable = true;
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Location = new System.Drawing.Point(497, 107);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(164, 108);
-            this.metroTile3.TabIndex = 4;
-            this.metroTile3.Text = "Incripciones";
-            this.metroTile3.UseSelectable = true;
             // 
             // metroTile4
             // 
@@ -137,6 +106,37 @@
             this.metroTile6.TabIndex = 5;
             this.metroTile6.Text = "Consultar Estudiante";
             this.metroTile6.UseSelectable = true;
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Location = new System.Drawing.Point(497, 107);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(164, 108);
+            this.metroTile3.TabIndex = 4;
+            this.metroTile3.Text = "Incripciones";
+            this.metroTile3.UseSelectable = true;
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Location = new System.Drawing.Point(289, 107);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(164, 108);
+            this.metroTile2.TabIndex = 3;
+            this.metroTile2.Text = "Registrar Asignatura";
+            this.metroTile2.UseSelectable = true;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(82, 107);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(164, 108);
+            this.metroTile1.TabIndex = 2;
+            this.metroTile1.Text = "Registrar Estudiante";
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.Click += new System.EventHandler(this.MetroTile1_Click);
             // 
             // MainForm
             // 
