@@ -1,4 +1,5 @@
-﻿using Parcial2_NeysiFM.Entidades;
+﻿using Parcial2_NeysiFM.BLL;
+using Parcial2_NeysiFM.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,22 +14,20 @@ namespace Parcial2_NeysiFM.UI.Consultas
 {
     public partial class ConsultaIncripcion : MetroFramework.Forms.MetroForm
     {
-     /*   public ConsultaIncripcion()
+       public ConsultaIncripcion()
         {
             InitializeComponent();
         }
 
         private void Buscar()
         {
-            var Lista = new List<Inscripciones>(); 
-            RepositorioInscripciones contexto = new RepositorioInscripciones();
+            var Lista = new List<Inscripciones>();
+            RepositorioInscripcion contexto = new RepositorioInscripcion();
 
             if (CriteriometroTextBox.Text.Trim().Length > 0)
             {
-
                 try
                 {
-
                     switch (FiltrometroComboBox.SelectedIndex)
                     {
                         // Filtrar Todo
@@ -58,11 +57,10 @@ namespace Parcial2_NeysiFM.UI.Consultas
             {
                 Lista = contexto.GetList(p => true);
             }
-
             Lista = Lista.Where(E => E.Fecha >= DesdemetroDateTime.Value.Date  && E.Fecha <= HastametroDateTime.Value.Date ).ToList();
 
             ConsultadataGridView.DataSource = null;
             ConsultadataGridView.DataSource = Lista;
-        }*/
+        }
     }
 }

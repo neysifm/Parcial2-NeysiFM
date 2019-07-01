@@ -12,13 +12,13 @@ namespace Parcial2_NeysiFM.Entidades
         [Key]
         public int EstudianteId { get; set; }
         public string Nombres { get; set; }
-        public DateTime FechaIncreso { get; set; }
+        public DateTime FechaIngreso { get; set; } 
         public double Balance { get; set; }
-        public Estudiantes(int estudianteId, string nombres, DateTime fechaIncreso, double balance)
+        public Estudiantes(int estudianteId, string nombres, DateTime fechaIngreso, double balance)
         {
             EstudianteId = estudianteId;
             Nombres = nombres;
-            FechaIncreso = fechaIncreso;
+            FechaIngreso = fechaIngreso;
             Balance = balance;
         }
 
@@ -26,7 +26,7 @@ namespace Parcial2_NeysiFM.Entidades
         {
             EstudianteId = 0;
             Nombres = string.Empty;
-            FechaIncreso = DateTime.Now;
+            FechaIngreso = DateTime.Now;
             Balance = 0;
         }
     }
