@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Parcial2_NeysiFM.UI.Consultas
 {
-    public partial class ConsultaEstudiante : Form
+    public partial class ConsultaEstudiante : MetroFramework.Forms.MetroForm
     {
         public ConsultaEstudiante()
         {
             InitializeComponent();
+        }
+
+        private void ConsultaEstudiante_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

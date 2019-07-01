@@ -126,6 +126,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Consultas\ConsultaAsignatura.resx">
+      <DependentUpon>ConsultaAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\ConsultaEstudiante.resx">
+      <DependentUpon>ConsultaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\ConsultaIncripcion.resx">
+      <DependentUpon>ConsultaIncripcion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistroAsignatura.resx">
       <DependentUpon>RegistroAsignatura.cs</DependentUpon>
     </EmbeddedResource>

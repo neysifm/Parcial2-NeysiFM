@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Parcial2_NeysiFM.UI.Consultas
 {
-    public partial class ConsultaIncripcion : Form
+    public partial class ConsultaIncripcion : MetroFramework.Forms.MetroForm
     {
         public ConsultaIncripcion()
         {
             InitializeComponent();
+        }
+
+        private void ConsultaIncripcion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void MetroLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
