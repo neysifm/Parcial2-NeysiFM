@@ -31,7 +31,7 @@ namespace Parcial2_NeysiFM.UI.Registros
         {
             IDnumericUpDown.Value = estudiante.EstudianteId;
             NombremetroTextBox.Text = estudiante.Nombres;
-            FechametroDateTime.Value = estudiante.FechaIncreso;
+            FechametroDateTime.Value = estudiante.FechaIngreso;
             BalancemetroTextBox.Text = estudiante.Balance.ToString();
         }
        
@@ -41,7 +41,7 @@ namespace Parcial2_NeysiFM.UI.Registros
             {
                 EstudianteId = Convert.ToInt32(IDnumericUpDown.Value),
                 Nombres = NombremetroTextBox.Text,
-                FechaIncreso = FechametroDateTime.Value,
+                FechaIngreso = FechametroDateTime.Value,
                 Balance = Convert.ToDouble(BalancemetroTextBox.Text),
                 
             };

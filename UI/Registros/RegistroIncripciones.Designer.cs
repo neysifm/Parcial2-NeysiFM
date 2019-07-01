@@ -197,6 +197,7 @@
             this.NuevometroButton.TabIndex = 12;
             this.NuevometroButton.Text = "Nuevo";
             this.NuevometroButton.UseSelectable = true;
+            this.NuevometroButton.Click += new System.EventHandler(this.NuevometroButton_Click);
             // 
             // GuardarmetroButton
             // 
@@ -206,6 +207,7 @@
             this.GuardarmetroButton.TabIndex = 13;
             this.GuardarmetroButton.Text = "Guardar";
             this.GuardarmetroButton.UseSelectable = true;
+            this.GuardarmetroButton.Click += new System.EventHandler(this.GuardarmetroButton_Click);
             // 
             // EliminarmetroButton
             // 
@@ -215,6 +217,7 @@
             this.EliminarmetroButton.TabIndex = 14;
             this.EliminarmetroButton.Text = "Eliminar";
             this.EliminarmetroButton.UseSelectable = true;
+            this.EliminarmetroButton.Click += new System.EventHandler(this.EliminarmetroButton_Click);
             // 
             // AsignaturasgroupBox
             // 

@@ -18,6 +18,7 @@ namespace Parcial2_NeysiFM.UI.Registros
         public RegistroIncripciones()
         {
             InitializeComponent();
+            listaDetalle = new List<InscripcionAsignaturaDetalle>();
         }
 
         public void LimpiarCampos()
@@ -112,7 +113,6 @@ namespace Parcial2_NeysiFM.UI.Registros
                     return false;
                 }
             }
-           
             return true;
         }
 
@@ -159,7 +159,6 @@ namespace Parcial2_NeysiFM.UI.Registros
             this.FechametroDateTime.Enabled = false;
             NombremetroTextBox.Enabled = false;
             DescripcionmetroTextBox.Enabled = false;
-            //lo puse deshabilitado porque no se va a editar solo a buscar
         }
 
         private void BuscarEstudiantemetroButton_Click(object sender, EventArgs e)
@@ -228,6 +227,87 @@ namespace Parcial2_NeysiFM.UI.Registros
         private void EliminarFilametroButton_Click(object sender, EventArgs e)
         {
             this.AsignaturasdataGridView.Rows.RemoveAt(this.AsignaturasdataGridView.CurrentCellAddress.Y);
+        }
+
+        private double Total()
+        {
+            double total = 0;
+            foreach (var item in listaDetalle)
+            {
+                total += item.Monto;
+            }
+            return total;
+        }
+
+        private void NuevometroButton_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void GuardarmetroButton_Click(object sender, EventArgs e)
+        {
+            if (!ValidarGuardar())
+            return;
+
+            RepositorioInscripcion contexto = new RepositorioInscripcion();
+            Inscripciones inscripcion = LlenaClase();
+
+            try
+            {
+                if (InscripcionIDnumericUpDown.Value == 0)
+                {
+                    if (contexto.Guardar(inscripcion))
+                    {
+                        LimpiarCampos();
+                        MessageBox.Show("Guardado correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al intentar guardar");
+                    }
+                }
+                else
+                {
+                    if (contexto.Modificar(inscripcion))
+                    {
+                        LimpiarCampos();
+                        MessageBox.Show("Se Modifico correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo modificar");
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+        }
+
+        private void EliminarmetroButton_Click(object sender, EventArgs e)
+        {
+            RepositorioInscripcion contexto = new RepositorioInscripcion();
+            try
+            {
+                if (InscripcionIDnumericUpDown.Value > 0)
+                {
+                    if (contexto.Eliminar((int)InscripcionIDnumericUpDown.Value))
+                    {
+                        contexto.RestarBalance((int)EstudianteIDnumericUpDown.Value, Total());
+                        LimpiarCampos();
+                        MessageBox.Show("Eliminado correctamente");
+                    }
+                }
+                else
+                {
+                    errorProvider.SetError(InscripcionIDnumericUpDown, "Debe ser Diferente de 0");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No se puedo eliminar");
+            }
         }
     }
 }
