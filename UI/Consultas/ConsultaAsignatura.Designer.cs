@@ -1,6 +1,6 @@
-﻿namespace Parcial2_NeysiFM.UI.Registros
+﻿namespace Parcial2_NeysiFM.UI.Consultas
 {
-    partial class RegistroEstudiantes
+    partial class ConsultaAsignatura
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // RegistroEstudiantes
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 440);
-            this.Name = "RegistroEstudiantes";
-            this.Text = "Registro Estudiantes";
-            this.Load += new System.EventHandler(this.RegistroEstudiantes_Load);
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "ConsultaAsignaturas";
         }
 
         #endregion

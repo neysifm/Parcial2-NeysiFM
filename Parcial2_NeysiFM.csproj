@@ -68,6 +68,7 @@
     <Compile Include="Entidades\Asignaturas.cs" />
     <Compile Include="Entidades\Estudiantes.cs" />
     <Compile Include="Entidades\Incripciones.cs" />
+    <Compile Include="Entidades\InscripcionAsignaturaDetalle.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,11 +77,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\ConsultaAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaAsignatura.Designer.cs">
+      <DependentUpon>ConsultaAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaEstudiante.Designer.cs">
+      <DependentUpon>ConsultaEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaIncripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaIncripcion.Designer.cs">
+      <DependentUpon>ConsultaIncripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroAsignatura.Designer.cs">
+      <DependentUpon>RegistroAsignatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\RegistroEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Registros\RegistroEstudiantes.Designer.cs">
       <DependentUpon>RegistroEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroIncripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroIncripciones.Designer.cs">
+      <DependentUpon>RegistroIncripciones.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Reportes\Class1.cs" />
     <EmbeddedResource Include="MainForm.resx">
@@ -112,8 +143,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\Consultas\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

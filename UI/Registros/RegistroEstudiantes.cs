@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Parcial2_NeysiFM.BLL;
+using Parcial2_NeysiFM.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,11 @@ namespace Parcial2_NeysiFM.UI.Registros
         private void RegistroEstudiantes_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void MetroTile1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
