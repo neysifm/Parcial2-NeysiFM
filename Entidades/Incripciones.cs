@@ -11,12 +11,14 @@ namespace Parcial2_NeysiFM.Entidades
     {
         [Key]
         public int IncripcionId { get; set; }
+        public int EstudianteId { get; set; }
         public DateTime Fecha { get; set; }
         public double Monto { get; set; }
 
-        public Incripciones(int incripcionId, DateTime fecha, double monto)
+        public Incripciones(int incripcionId, int estudianteId, DateTime fecha, double monto)
         {
             IncripcionId = incripcionId;
+            EstudianteId = estudianteId;
             Fecha = fecha;
             Monto = monto;
         }
@@ -24,6 +26,7 @@ namespace Parcial2_NeysiFM.Entidades
         public Incripciones()
         {
             IncripcionId = 0;
+            EstudianteId = 0;
             Fecha = DateTime.Now;
             Monto = 0;
         }
