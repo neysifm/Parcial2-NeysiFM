@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parcial2_NeysiFM.BLL
 {
-    public interface IFormularioRegistro <T>
+    public interface IFormularioRegistro <T> 
     {
         bool ValidarCampos();
         bool ValidarBuscar();

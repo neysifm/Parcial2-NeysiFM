@@ -36,6 +36,8 @@
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.label1 = new System.Windows.Forms.Label();
+            this.metroPanel3.SuspendLayout();
             this.metroPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,10 +46,11 @@
             this.metroPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroPanel3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.metroPanel3.Controls.Add(this.label1);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(1, 5);
+            this.metroPanel3.Location = new System.Drawing.Point(0, 0);
             this.metroPanel3.Name = "metroPanel3";
             this.metroPanel3.Size = new System.Drawing.Size(747, 39);
             this.metroPanel3.TabIndex = 1;
@@ -60,6 +63,7 @@
             this.metroPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroPanel4.Controls.Add(this.metroPanel3);
             this.metroPanel4.Controls.Add(this.metroTile4);
             this.metroPanel4.Controls.Add(this.metroTile5);
             this.metroPanel4.Controls.Add(this.metroTile6);
@@ -138,15 +142,26 @@
             this.metroTile1.UseSelectable = true;
             this.metroTile1.Click += new System.EventHandler(this.MetroTile1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(136, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(463, 31);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Sistema Registro de Estudiantes";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 526);
             this.Controls.Add(this.metroPanel4);
-            this.Controls.Add(this.metroPanel3);
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.metroPanel3.ResumeLayout(false);
+            this.metroPanel3.PerformLayout();
             this.metroPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -161,6 +176,7 @@
         private MetroFramework.Controls.MetroTile metroTile4;
         private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroTile metroTile6;
+        private System.Windows.Forms.Label label1;
     }
 }
 
