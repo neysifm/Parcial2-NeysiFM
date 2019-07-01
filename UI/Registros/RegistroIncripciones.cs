@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Parcial2_NeysiFM.UI.Registros
 {
-    public partial class RegistroIncripciones : Form
+    public partial class RegistroIncripciones : MetroFramework.Forms.MetroForm
     {
         public RegistroIncripciones()
         {
             InitializeComponent();
+        }
+
+        private void RegistroIncripciones_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
