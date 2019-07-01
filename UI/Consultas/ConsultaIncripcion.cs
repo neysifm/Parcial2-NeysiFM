@@ -16,20 +16,5 @@ namespace Parcial2_NeysiFM.UI.Consultas
         {
             InitializeComponent();
         }
-
-        private void ConsultaIncripcion_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void MetroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

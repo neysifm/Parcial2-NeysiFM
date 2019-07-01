@@ -100,6 +100,7 @@
             this.metroTile4.TabIndex = 7;
             this.metroTile4.Text = "Consultar Incripciones";
             this.metroTile4.UseSelectable = true;
+            this.metroTile4.Click += new System.EventHandler(this.MetroTile4_Click);
             // 
             // metroTile5
             // 
@@ -110,6 +111,7 @@
             this.metroTile5.TabIndex = 6;
             this.metroTile5.Text = "Consultar Asignatura";
             this.metroTile5.UseSelectable = true;
+            this.metroTile5.Click += new System.EventHandler(this.MetroTile5_Click);
             // 
             // metroTile6
             // 
@@ -120,6 +122,7 @@
             this.metroTile6.TabIndex = 5;
             this.metroTile6.Text = "Consultar Estudiante";
             this.metroTile6.UseSelectable = true;
+            this.metroTile6.Click += new System.EventHandler(this.MetroTile6_Click);
             // 
             // metroTile3
             // 
@@ -161,7 +164,6 @@
             this.ClientSize = new System.Drawing.Size(749, 526);
             this.Controls.Add(this.metroPanel4);
             this.Name = "MainForm";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
             this.metroPanel4.ResumeLayout(false);

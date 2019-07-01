@@ -1,4 +1,5 @@
-﻿using Parcial2_NeysiFM.UI.Registros;
+﻿using Parcial2_NeysiFM.UI.Consultas;
+using Parcial2_NeysiFM.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,11 +19,6 @@ namespace Parcial2_NeysiFM
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void MetroTile1_Click(object sender, EventArgs e)
         {
             RegistroEstudiantes Rest = new RegistroEstudiantes();
@@ -39,6 +35,24 @@ namespace Parcial2_NeysiFM
         {
             RegistroIncripciones Rins = new RegistroIncripciones();
             Rins.ShowDialog();
+        }
+
+        private void MetroTile6_Click(object sender, EventArgs e)
+        {
+            ConsultaEstudiante ConEst = new ConsultaEstudiante();
+            ConEst.ShowDialog();
+        }
+
+        private void MetroTile5_Click(object sender, EventArgs e)
+        {
+            ConsultaAsignatura ConAsig = new ConsultaAsignatura();
+            ConAsig.ShowDialog();
+        }
+
+        private void MetroTile4_Click(object sender, EventArgs e)
+        {
+            ConsultaIncripcion ConIns = new ConsultaIncripcion();
+            ConIns.ShowDialog();
         }
     }
 }

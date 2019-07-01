@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ConsultadataGridView = new System.Windows.Forms.DataGridView();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.HastametroDateTime = new MetroFramework.Controls.MetroDateTime();
+            this.DesdemetroDateTime = new MetroFramework.Controls.MetroDateTime();
+            this.BuscarmetroButton = new MetroFramework.Controls.MetroButton();
+            this.FiltrometroComboBox = new MetroFramework.Controls.MetroComboBox();
+            this.CriteriometroTextBox = new MetroFramework.Controls.MetroTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // ConsultadataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 191);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(672, 318);
-            this.dataGridView1.TabIndex = 0;
+            this.ConsultadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ConsultadataGridView.Location = new System.Drawing.Point(29, 191);
+            this.ConsultadataGridView.Name = "ConsultadataGridView";
+            this.ConsultadataGridView.Size = new System.Drawing.Size(672, 318);
+            this.ConsultadataGridView.TabIndex = 0;
             // 
             // metroLabel1
             // 
@@ -61,7 +61,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(322, 97);
+            this.metroLabel2.Location = new System.Drawing.Point(330, 97);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(44, 19);
             this.metroLabel2.TabIndex = 2;
@@ -85,92 +85,89 @@
             this.metroLabel4.TabIndex = 4;
             this.metroLabel4.Text = "Criterio:";
             // 
-            // metroDateTime1
+            // HastametroDateTime
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(369, 87);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(215, 29);
-            this.metroDateTime1.TabIndex = 5;
+            this.HastametroDateTime.Location = new System.Drawing.Point(377, 87);
+            this.HastametroDateTime.MinimumSize = new System.Drawing.Size(0, 29);
+            this.HastametroDateTime.Name = "HastametroDateTime";
+            this.HastametroDateTime.Size = new System.Drawing.Size(215, 29);
+            this.HastametroDateTime.TabIndex = 5;
             // 
-            // metroDateTime2
+            // DesdemetroDateTime
             // 
-            this.metroDateTime2.Location = new System.Drawing.Point(77, 87);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime2.Name = "metroDateTime2";
-            this.metroDateTime2.Size = new System.Drawing.Size(215, 29);
-            this.metroDateTime2.TabIndex = 6;
+            this.DesdemetroDateTime.Location = new System.Drawing.Point(77, 87);
+            this.DesdemetroDateTime.MinimumSize = new System.Drawing.Size(0, 29);
+            this.DesdemetroDateTime.Name = "DesdemetroDateTime";
+            this.DesdemetroDateTime.Size = new System.Drawing.Size(215, 29);
+            this.DesdemetroDateTime.TabIndex = 6;
             // 
-            // metroButton1
+            // BuscarmetroButton
             // 
-            this.metroButton1.Location = new System.Drawing.Point(626, 121);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 7;
-            this.metroButton1.Text = "Buscar";
-            this.metroButton1.UseSelectable = true;
+            this.BuscarmetroButton.Location = new System.Drawing.Point(626, 121);
+            this.BuscarmetroButton.Name = "BuscarmetroButton";
+            this.BuscarmetroButton.Size = new System.Drawing.Size(75, 23);
+            this.BuscarmetroButton.TabIndex = 7;
+            this.BuscarmetroButton.Text = "Buscar";
+            this.BuscarmetroButton.UseSelectable = true;
             // 
-            // metroComboBox1
+            // FiltrometroComboBox
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(77, 144);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(215, 29);
-            this.metroComboBox1.TabIndex = 8;
-            this.metroComboBox1.UseSelectable = true;
+            this.FiltrometroComboBox.FormattingEnabled = true;
+            this.FiltrometroComboBox.ItemHeight = 23;
+            this.FiltrometroComboBox.Location = new System.Drawing.Point(77, 144);
+            this.FiltrometroComboBox.Name = "FiltrometroComboBox";
+            this.FiltrometroComboBox.Size = new System.Drawing.Size(215, 29);
+            this.FiltrometroComboBox.TabIndex = 8;
+            this.FiltrometroComboBox.UseSelectable = true;
             // 
-            // metroTextBox1
-            // 
-            // 
+            // CriteriometroTextBox
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(178, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[] {
-        "metroTextBox1"};
-            this.metroTextBox1.Location = new System.Drawing.Point(384, 150);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(200, 23);
-            this.metroTextBox1.TabIndex = 9;
-            this.metroTextBox1.Text = "metroTextBox1";
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // 
+            this.CriteriometroTextBox.CustomButton.Image = null;
+            this.CriteriometroTextBox.CustomButton.Location = new System.Drawing.Point(191, 1);
+            this.CriteriometroTextBox.CustomButton.Name = "";
+            this.CriteriometroTextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.CriteriometroTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.CriteriometroTextBox.CustomButton.TabIndex = 1;
+            this.CriteriometroTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.CriteriometroTextBox.CustomButton.UseSelectable = true;
+            this.CriteriometroTextBox.CustomButton.Visible = false;
+            this.CriteriometroTextBox.Lines = new string[0];
+            this.CriteriometroTextBox.Location = new System.Drawing.Point(379, 150);
+            this.CriteriometroTextBox.MaxLength = 32767;
+            this.CriteriometroTextBox.Name = "CriteriometroTextBox";
+            this.CriteriometroTextBox.PasswordChar = '\0';
+            this.CriteriometroTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.CriteriometroTextBox.SelectedText = "";
+            this.CriteriometroTextBox.SelectionLength = 0;
+            this.CriteriometroTextBox.SelectionStart = 0;
+            this.CriteriometroTextBox.ShortcutsEnabled = true;
+            this.CriteriometroTextBox.Size = new System.Drawing.Size(213, 23);
+            this.CriteriometroTextBox.TabIndex = 9;
+            this.CriteriometroTextBox.UseSelectable = true;
+            this.CriteriometroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.CriteriometroTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // ConsultaEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 541);
-            this.Controls.Add(this.metroTextBox1);
-            this.Controls.Add(this.metroComboBox1);
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.metroDateTime2);
-            this.Controls.Add(this.metroDateTime1);
+            this.Controls.Add(this.CriteriometroTextBox);
+            this.Controls.Add(this.FiltrometroComboBox);
+            this.Controls.Add(this.BuscarmetroButton);
+            this.Controls.Add(this.DesdemetroDateTime);
+            this.Controls.Add(this.HastametroDateTime);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ConsultadataGridView);
             this.Name = "ConsultaEstudiante";
             this.Text = "Consulta Estudiante";
-            this.Load += new System.EventHandler(this.ConsultaEstudiante_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,15 +175,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ConsultadataGridView;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
-        private MetroFramework.Controls.MetroDateTime metroDateTime2;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroDateTime HastametroDateTime;
+        private MetroFramework.Controls.MetroDateTime DesdemetroDateTime;
+        private MetroFramework.Controls.MetroButton BuscarmetroButton;
+        private MetroFramework.Controls.MetroComboBox FiltrometroComboBox;
+        private MetroFramework.Controls.MetroTextBox CriteriometroTextBox;
     }
 }

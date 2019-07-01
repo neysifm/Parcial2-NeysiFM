@@ -210,10 +210,11 @@ namespace Parcial2_NeysiFM.UI.Registros
             }
         }
 
-        private double CalcularMonto()
+       /* private double CalcularMonto()
         {
             double monto = 0;
             foreach()
         }
+        */
     }
 }

@@ -17,9 +17,6 @@ namespace Parcial2_NeysiFM.UI.Consultas
             InitializeComponent();
         }
 
-        private void ConsultaEstudiante_Load(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }
