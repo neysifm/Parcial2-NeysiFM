@@ -243,6 +243,7 @@
             this.EliminarFilametroButton.TabIndex = 16;
             this.EliminarFilametroButton.Text = "Eliminar Fila";
             this.EliminarFilametroButton.UseSelectable = true;
+            this.EliminarFilametroButton.Click += new System.EventHandler(this.EliminarFilametroButton_Click);
             // 
             // metroLabel6
             // 

@@ -8,6 +8,7 @@ namespace Parcial2_NeysiFM.Entidades
 {
     public class InscripcionAsignaturaDetalle
     {
+        public int InscripcionAsignaturaDetalleId { get; set; }
         public int InscripcionId { get; set; }
         public Asignaturas Asignatura { get; set; }
         public Estudiantes Estudiante { get; set; }
@@ -17,8 +18,9 @@ namespace Parcial2_NeysiFM.Entidades
         {
         }
 
-        public InscripcionAsignaturaDetalle(int inscripcionId, Asignaturas asignatura, Estudiantes estudiante, double monto)
+        public InscripcionAsignaturaDetalle(int inscripcionAsignaturaDetalleId, int inscripcionId, Asignaturas asignatura, Estudiantes estudiante, double monto)
         {
+            InscripcionAsignaturaDetalleId = inscripcionAsignaturaDetalleId;
             InscripcionId = inscripcionId;
             Asignatura = asignatura;
             Estudiante = estudiante;

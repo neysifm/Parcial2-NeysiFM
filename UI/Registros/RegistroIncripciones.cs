@@ -14,7 +14,7 @@ namespace Parcial2_NeysiFM.UI.Registros
 {
     public partial class RegistroIncripciones : MetroFramework.Forms.MetroForm, IFormularioRegistro<Inscripciones>
     {
-        public List<InscripcionAsignaturaDetalle> listaDetalle { get; set; }
+        public List<InscripcionAsignaturaDetalle> listaDetalle = new List<InscripcionAsignaturaDetalle>();
         public RegistroIncripciones()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace Parcial2_NeysiFM.UI.Registros
             {
                 LlenarDataGrid(inscripciones.InscripcionDetalle);
                 this.FechametroDateTime.Value = inscripciones.Fecha;
-                this.PrecionumericUpDown.Value = Convert.ToDecimal(inscripciones);
+                this.PrecionumericUpDown.Value = Convert.ToDecimal(inscripciones.PrecioCredito);
             } 
             if(estudiantes != null)
             {
@@ -206,15 +206,28 @@ namespace Parcial2_NeysiFM.UI.Registros
             Estudiantes estudiante = new RepositorioBase<Estudiantes>().Buscar(Convert.ToInt32(EstudianteIDnumericUpDown.Value));
             if(asignatura != null && estudiante != null)
             {
-                this.listaDetalle.Add(new InscripcionAsignaturaDetalle(Convert.ToInt32(this.InscripcionIDnumericUpDown.Value), asignatura, estudiante, CalcularMonto()));
+                this.listaDetalle.Add(new InscripcionAsignaturaDetalle(0, Convert.ToInt32(this.InscripcionIDnumericUpDown.Value), asignatura, estudiante, Convert.ToInt32(PrecionumericUpDown.Value) * asignatura.Creditos));
             }
+
+            TotalmetroTextBox.Text = this.CalcularMonto().ToString();
+            LlenarDataGrid(this.listaDetalle);
+            this.AsignaturaIDnumericUpDown.Enabled = true;
         }
 
-       /* private double CalcularMonto()
+        private double CalcularMonto()
         {
             double monto = 0;
-            foreach()
+            foreach (InscripcionAsignaturaDetalle obj in this.listaDetalle)
+            {
+                monto += obj.Monto;
+            }
+
+            return monto;
         }
-        */
+
+        private void EliminarFilametroButton_Click(object sender, EventArgs e)
+        {
+            this.AsignaturasdataGridView.Rows.RemoveAt(this.AsignaturasdataGridView.CurrentCellAddress.Y);
+        }
     }
 }
