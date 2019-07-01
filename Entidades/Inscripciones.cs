@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Parcial2_NeysiFM.Entidades
 {
-    public class Incripciones
+    public class Inscripciones
     {
         [Key]
         public int IncripcionId { get; set; }
@@ -15,7 +15,7 @@ namespace Parcial2_NeysiFM.Entidades
         public DateTime Fecha { get; set; }
         public double Monto { get; set; }
 
-        public Incripciones(int incripcionId, int estudianteId, DateTime fecha, double monto)
+        public Inscripciones(int incripcionId, int estudianteId, DateTime fecha, double monto)
         {
             IncripcionId = incripcionId;
             EstudianteId = estudianteId;
@@ -23,7 +23,7 @@ namespace Parcial2_NeysiFM.Entidades
             Monto = monto;
         }
 
-        public Incripciones()
+        public Inscripciones()
         {
             IncripcionId = 0;
             EstudianteId = 0;

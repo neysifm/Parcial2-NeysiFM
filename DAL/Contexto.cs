@@ -12,7 +12,7 @@ namespace Parcial2_NeysiFM.DAL
     {
         public DbSet<Asignaturas> Asignatura { get; set; }
         public DbSet<Estudiantes> Estudiante { get; set; }
-        public DbSet<Incripciones> Incripcion { get; set; }
+        public DbSet<Inscripciones> Incripcion { get; set; }
         public Contexto() : base("Constr")
         {
         }     
