@@ -65,7 +65,7 @@
             this.CriteriometroTextBox.SelectionLength = 0;
             this.CriteriometroTextBox.SelectionStart = 0;
             this.CriteriometroTextBox.ShortcutsEnabled = true;
-            this.CriteriometroTextBox.Size = new System.Drawing.Size(215, 23);
+            this.CriteriometroTextBox.Size = new System.Drawing.Size(227, 23);
             this.CriteriometroTextBox.TabIndex = 19;
             this.CriteriometroTextBox.UseSelectable = true;
             this.CriteriometroTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -77,10 +77,11 @@
             this.FiltrometroComboBox.ItemHeight = 23;
             this.FiltrometroComboBox.Items.AddRange(new object[] {
             "Todos los Registros",
-            "Por ID"});
+            "Por ID",
+            "Por Estudiantes"});
             this.FiltrometroComboBox.Location = new System.Drawing.Point(97, 132);
             this.FiltrometroComboBox.Name = "FiltrometroComboBox";
-            this.FiltrometroComboBox.Size = new System.Drawing.Size(215, 29);
+            this.FiltrometroComboBox.Size = new System.Drawing.Size(232, 29);
             this.FiltrometroComboBox.TabIndex = 18;
             this.FiltrometroComboBox.UseSelectable = true;
             // 
@@ -92,13 +93,14 @@
             this.BuscarmetroButton.TabIndex = 17;
             this.BuscarmetroButton.Text = "Buscar";
             this.BuscarmetroButton.UseSelectable = true;
+            this.BuscarmetroButton.Click += new System.EventHandler(this.BuscarmetroButton_Click);
             // 
             // DesdemetroDateTime
             // 
             this.DesdemetroDateTime.Location = new System.Drawing.Point(97, 75);
             this.DesdemetroDateTime.MinimumSize = new System.Drawing.Size(0, 29);
             this.DesdemetroDateTime.Name = "DesdemetroDateTime";
-            this.DesdemetroDateTime.Size = new System.Drawing.Size(215, 29);
+            this.DesdemetroDateTime.Size = new System.Drawing.Size(232, 29);
             this.DesdemetroDateTime.TabIndex = 16;
             // 
             // HastametroDateTime
@@ -106,7 +108,7 @@
             this.HastametroDateTime.Location = new System.Drawing.Point(389, 75);
             this.HastametroDateTime.MinimumSize = new System.Drawing.Size(0, 29);
             this.HastametroDateTime.Name = "HastametroDateTime";
-            this.HastametroDateTime.Size = new System.Drawing.Size(215, 29);
+            this.HastametroDateTime.Size = new System.Drawing.Size(227, 29);
             this.HastametroDateTime.TabIndex = 15;
             // 
             // metroLabel4
@@ -147,6 +149,9 @@
             // 
             // ConsultadataGridView
             // 
+            this.ConsultadataGridView.AllowUserToAddRows = false;
+            this.ConsultadataGridView.AllowUserToOrderColumns = true;
+            this.ConsultadataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ConsultadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ConsultadataGridView.Location = new System.Drawing.Point(49, 179);
             this.ConsultadataGridView.Name = "ConsultadataGridView";

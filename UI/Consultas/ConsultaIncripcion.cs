@@ -62,5 +62,10 @@ namespace Parcial2_NeysiFM.UI.Consultas
             ConsultadataGridView.DataSource = null;
             ConsultadataGridView.DataSource = Lista;
         }
+
+        private void BuscarmetroButton_Click(object sender, EventArgs e)
+        {
+            Buscar();
+        }
     }
 }
