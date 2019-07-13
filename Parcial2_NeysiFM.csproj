@@ -65,15 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\IFormularioRegistro.cs" />
-    <Compile Include="BLL\IRepository.cs" />
-    <Compile Include="BLL\IRepositorioBase.cs" />
-    <Compile Include="BLL\RepositorioInscripcion.cs" />
-    <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\Asignaturas.cs" />
-    <Compile Include="Entidades\Estudiantes.cs" />
-    <Compile Include="Entidades\Inscripciones.cs" />
-    <Compile Include="Entidades\InscripcionAsignaturaDetalle.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,48 +73,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Consultas\ConsultaAsignatura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Consultas\ConsultaAsignatura.Designer.cs">
-      <DependentUpon>ConsultaAsignatura.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Consultas\ConsultaEstudiante.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Consultas\ConsultaEstudiante.Designer.cs">
-      <DependentUpon>ConsultaEstudiante.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Consultas\ConsultaIncripcion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Consultas\ConsultaIncripcion.Designer.cs">
-      <DependentUpon>ConsultaIncripcion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Registros\RegistroAsignatura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Registros\RegistroAsignatura.Designer.cs">
-      <DependentUpon>RegistroAsignatura.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Registros\RegistroEstudiantes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Registros\RegistroEstudiantes.Designer.cs">
-      <DependentUpon>RegistroEstudiantes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Registros\RegistroIncripciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Registros\RegistroIncripciones.Designer.cs">
-      <DependentUpon>RegistroIncripciones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Reportes\CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,28 +85,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\Consultas\ConsultaAsignatura.resx">
-      <DependentUpon>ConsultaAsignatura.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Consultas\ConsultaEstudiante.resx">
-      <DependentUpon>ConsultaEstudiante.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Consultas\ConsultaIncripcion.resx">
-      <DependentUpon>ConsultaIncripcion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Registros\RegistroAsignatura.resx">
-      <DependentUpon>RegistroAsignatura.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Registros\RegistroEstudiantes.resx">
-      <DependentUpon>RegistroEstudiantes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Registros\RegistroIncripciones.resx">
-      <DependentUpon>RegistroIncripciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Reportes\CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,6 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UI\UI.csproj">
+      <Project>{40e3fe76-d7fb-4912-a1c8-f15043e79a15}</Project>
+      <Name>UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

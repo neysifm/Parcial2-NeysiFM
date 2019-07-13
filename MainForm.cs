@@ -1,5 +1,5 @@
-﻿using Parcial2_NeysiFM.UI.Consultas;
-using Parcial2_NeysiFM.UI.Registros;
+﻿using UI.Consultas;
+using UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
